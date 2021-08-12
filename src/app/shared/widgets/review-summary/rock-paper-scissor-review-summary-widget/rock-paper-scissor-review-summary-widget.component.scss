@@ -1,0 +1,32 @@
+.container {
+    background-color:black;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height:150px;
+    gap: 10px;
+}
+
+.quick-summary {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    gap:10px;
+}
+
+img {
+    width: auto;
+    height:100%;
+}
+
+h1 {
+    margin:0;
+    color:#bfe085
+}
+span {
+    font-style:italic;
+    font-size: 20px;
+}

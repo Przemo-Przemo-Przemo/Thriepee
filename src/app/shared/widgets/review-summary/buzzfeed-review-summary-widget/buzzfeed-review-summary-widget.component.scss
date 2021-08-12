@@ -1,0 +1,42 @@
+.container {
+    background-color:black;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height:150px;
+    gap: 10px;
+}
+
+.quick-summary {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    gap:10px;
+}
+
+span {
+    font-style:italic;
+    font-size: 20px;
+}
+
+a {
+    color: #0fe3f2;
+    font-weight: bold;
+    // text-decoration: underline;
+    text-decoration:none;
+    border-bottom: 1px solid #0fe3f2;
+    // text-decoration-skip: solid;
+}
+
+h1 {
+    color: #0fe3f2;
+    margin:0px;
+}
+
+img {
+    width: auto;
+    height:100%;
+}

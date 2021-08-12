@@ -1,0 +1,8 @@
+
+<div class="what-we-do-container" (mouseenter)="infoEnterOnMouseEnter($event)" (mouseleave)="infoLeaveOnMouseLeave($event)">
+    <div class="info" [ngClass]="direction">
+        <h2>{{imgTitle}}</h2>
+        <p>{{imgDescription}}</p>
+    </div>
+    <img [src]="imgPath">
+</div>

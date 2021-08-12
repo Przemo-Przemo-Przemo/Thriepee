@@ -1,0 +1,89 @@
+
+.introduction-title-container {
+    margin-bottom:60vh;
+    position:relative;
+    top:5vw;
+    display:flex;
+    justify-content: space-around;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.introduction-title-text { 
+    font-size: 9.6vw;
+    font-family: 'Monsieur La Doulaise'
+}
+
+.logo {
+    width: 15vw;
+    height: 13.6vw;
+}
+
+@keyframes rotating {
+    from {transform: rotate(0deg)}
+    to   {transform: rotate(360deg)}
+}
+
+.rotating {
+   animation: rotating 2s linear infinite;
+}
+
+// FIXME: backdrop-filter does not work in firefox
+.what-we-do-container {
+    backdrop-filter:blur(16px);
+    background-color:rgba(255, 255, 255, 0.50);
+    margin-bottom:60vh;
+}
+
+.what-we-do-title {
+    font-family: 'Monsieur La Doulaise';
+    font-size:80px;
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.what-we-do-photos-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+    padding-bottom:40px;
+}
+
+.what-we-do-photo {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.what-we-do-photo:hover {
+    cursor: pointer
+}
+
+.selected-what-we-do {
+    backdrop-filter:blur(16px);
+    background-color:rgba(255, 255, 255, 0.50);
+    height:80%;
+    width:100%;
+}
+
+.main-image {
+    // width: auto;
+    width:100%;
+    // width:4000px;
+    // object-fit:none;
+    // height:auto
+    // height: 90vh;
+    // object-fit: cover;
+}
+
+
+.background-images {
+    position: absolute;
+    // overflow:hidden;
+    width:100%;
+    // object-fit:none;
+    top: 0;
+    z-index: -1;
+}

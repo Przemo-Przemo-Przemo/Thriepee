@@ -1,0 +1,45 @@
+@use "sass:math";
+.container {
+  background-color:rgb(18, 19, 20);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  color: red;
+}
+
+$scoreWidth: 100;
+$scoreHeight: $scoreWidth/math.sqrt(3);
+
+.score:before, :after {
+  position:absolute;
+  content: "";
+  width: 0;
+  left:0px;
+  border-left: $scoreWidth/2+0px solid transparent;
+  border-right: $scoreWidth/2+0px solid transparent;
+}
+
+.score:before {
+  border-bottom: 0.5*$scoreHeight+0px solid rgb(191,19,19);;
+  bottom: $scoreHeight + 0px;
+}
+
+.score {
+  width: $scoreWidth + 0px;
+  height: $scoreHeight + 0px; 
+  background-color: rgb(191,19,19);
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.score:after {
+  top: $scoreHeight + 0px;
+  border-top: 0.5 * $scoreHeight+0px solid rgb(191,19,19);;
+}

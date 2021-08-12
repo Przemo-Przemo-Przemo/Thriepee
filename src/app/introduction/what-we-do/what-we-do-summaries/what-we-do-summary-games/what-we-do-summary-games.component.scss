@@ -1,0 +1,33 @@
+.awards {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding-left:4rem;
+    padding-right:4rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container { 
+    display:flex; 
+    flex-direction: column;
+}
+
+video {
+    width:65vw;
+}
+
+.game {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    overflow-x:hidden;
+}
+
+@media only screen and (max-width:1330px) {
+    .awards {
+        justify-content: center;
+    }
+}

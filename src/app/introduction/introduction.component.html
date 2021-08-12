@@ -1,0 +1,36 @@
+<div class="introduction-title-container">
+  <img src="../assets/logo.png" class="logo rotating">
+
+  <div class="introduction-title-text">
+    {{title}}
+  </div>
+  
+  <img src="../assets/logo.png" class="logo rotating">
+</div>
+
+
+<div class="what-we-do-container">
+      <div class="what-we-do-title">Check out our projects!</div>
+      <div class="what-we-do-photos-grid">
+        <app-what-we-do-photo (click)="selectSummaryAndScroll(photo.title, selectedWhatWeDo)" 
+        class="what-we-do-photo" 
+        *ngFor="let photo of whatWeDoPhotos" [imgTitle]="photo.title" [imgPath]="photo.path" [imgDescription]="photo.description">
+        </app-what-we-do-photo>
+      </div>
+</div>
+
+<!-- TODO: scrolling to this part causes performance issues because component is rerendered everytime the flag is changed-->
+<div #selectedWhatWeDo class="selected-what-we-do"
+[ngSwitch]="selectedWhatWeDoSummary">
+  <app-what-we-do-summary-games *ngSwitchCase="'Games'"></app-what-we-do-summary-games>
+  <app-what-we-do-summary-web-development *ngSwitchCase="'Web development'"></app-what-we-do-summary-web-development>
+  <app-what-we-do-summary-art *ngSwitchCase="'Art'"></app-what-we-do-summary-art>
+  <app-what-we-do-summary-comedy *ngSwitchCase="'Comedy'"></app-what-we-do-summary-comedy>
+</div>
+
+<div class="background-images">
+  <img src="../assets/introduction/introduction-main-image.jpg" class="main-image"/>
+</div>
+
+<!-- temporary -->
+<div style="height:1000px; background-color:rgb(18, 19, 20);"></div>
