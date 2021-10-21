@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { IgnReviewSummaryWidgetComponent } from './shared/widgets/review-summary
 import { RockPaperScissorReviewSummaryWidgetComponent } from './shared/widgets/review-summary/rock-paper-scissor-review-summary-widget/rock-paper-scissor-review-summary-widget.component';
 import { BuzzfeedReviewSummaryWidgetComponent } from './shared/widgets/review-summary/buzzfeed-review-summary-widget/buzzfeed-review-summary-widget.component';
 import { YahooAnswersReviewSummaryWidgetComponent } from './shared/widgets/review-summary/yahoo-answers-review-summary-widget/yahoo-answers-review-summary-widget.component';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { YahooAnswersReviewSummaryWidgetComponent } from './shared/widgets/revie
     YahooAnswersReviewSummaryWidgetComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule
   ],

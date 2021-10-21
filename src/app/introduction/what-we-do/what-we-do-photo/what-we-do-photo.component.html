@@ -1,6 +1,27 @@
-
+<!-- 
 <div class="what-we-do-container" (mouseenter)="infoEnterOnMouseEnter($event)" (mouseleave)="infoLeaveOnMouseLeave($event)">
     <div class="info" [ngClass]="direction">
+        <h2>{{imgTitle}}</h2>
+        <p>{{imgDescription}}</p>
+    </div>
+    <img [src]="imgPath">
+</div>
+ -->
+
+
+ <!-- 'width': infoSideLength+'px', 
+ 'height': infoSideLength+'px',
+ 'left': -infoSideLength/3 + 'px', 
+ 'top': -infoSideLength/3 + 'px', -->
+
+<div class="what-we-do-container" (mousemove)="infoMouseMove($event)">
+    <div #info class="info" [ngStyle]=" {
+        'width': infoWidth+'px',
+        'height': infoHeight+'px',
+        'left': -infoWidth/3 + 'px',
+        'top': -infoHeight/3 + 'px',
+        'clip-path': clipPath
+    }">
         <h2>{{imgTitle}}</h2>
         <p>{{imgDescription}}</p>
     </div>

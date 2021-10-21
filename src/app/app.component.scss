@@ -1,1 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+body::-webkit-scrollbar {
+   width:0.25rem;
+}
+body::-webkit-scrollbar-thumb {
+    background: #bc8155
+}
+body::-webkit-scrollbar-track {
+    background:#1e1e24;
+}
